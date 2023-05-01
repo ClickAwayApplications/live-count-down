@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Away Application - Countdown</title>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <style>
+        
+/* --footer-- */
+
+#footer {
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+
+.footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-left {
+    cursor: pointer;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+}
+
+.footer-row p {
+    line-height: 35px;
+}
+
+.footer-left .fa, .footer-right .fa {
+    font-size: 20px;
+    color: #137dc5;
+    margin: 10px;
+}
+
+.footer-img {
+    max-width: 470px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.social-links p strong {
+    font-size: 15px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links .fa-facebook {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #3b5998;
+    margin: 40px 5px 0;
+    color: #3b5998;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.social-links .fa-instagram {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #dd1717;
+    margin: 40px 5px 0;
+    color: #ff3002;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.social-links .fa-twitter {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #00acee ;
+    margin: 40px 5px 0;
+    color: #00acee ;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.social-links .fa-whatsapp {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #12c421e8;
+    margin: 40px 5px 0;
+    color: #17b917;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.social-links .fa-facebook:hover {
+    background: #3b5998;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.social-links .fa-instagram:hover {
+    background: #df2d0d;
+    color: #f1f1f1;
+    transform: translateY(-7px);
+}
+
+.social-links .fa-twitter:hover {
+    background: #00acee;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.social-links .fa-whatsapp:hover {
+    background: #4bb40f;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.social-links p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 770px) {
+    .footer-left, .footer-right {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footer-img {
+        top: 25%;
+    }
+}
+</style>
+<head>
+
+</head>
+
+<body>
+    
+      <div class="container">
+          <div class="logo-container">
+            <img src="images/caalogo.jpg" alt="Logo">
+            <p>We are going live in...</p>
+          </div>
+          <div class="countdown-container">
+            <div class="countdown">
+              <div class="countdown-row">
+                <div class="countdown-cell">
+                  <span id="days"></span>
+                  <span>Days</span>
+                </div>
+                <div class="countdown-cell">
+                  <span id="hours"></span>
+                  <span>Hours</span>
+                </div>
+                <div class="countdown-cell">
+                  <span id="minutes"></span>
+                  <span>Minutes</span>
+                </div>
+                <div class="countdown-cell">
+                  <span id="seconds"></span>
+                  <span>Seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <script src="stopwatch.js"></script>
+
+    
+    <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100091608591979"><i class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com/clickawayapplications?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+        <a href="PNA.html"><i class="fa fa-twitter"></i></a>
+        <a href="https://wa.me/27646531060"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+
+        <p>Copyright <strong>©</strong> Click Away Application (PTY) LTD. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
